@@ -24,7 +24,7 @@ module.exports = {
           "base-100": "#ffffff",
           "base-200": "#f2f2f2",
           "base-300": "#e5e6e6",
-          "base-content": "#1f2937"
+          "base-content": "#000000"
         }
       },
       {
@@ -40,7 +40,7 @@ module.exports = {
           "base-100": "#faf7f5",
           "base-200": "#efeae6",
           "base-300": "#e7e2df",
-          "base-content": "#291334"
+          "base-content": "#000000"
         }
       },
     ],
