@@ -14,7 +14,14 @@ export default function ThemeSwitcher() {
 
   const toggleTheme = () => {
     setIsAnimating(true)
-    const newTheme = theme === 'light' ? 'dark' : 'light'
+    
+    let newTheme = 'light'
+    if (theme === 'light') {
+      newTheme = 'cupcake'
+    } else {
+      newTheme = 'light'
+    }
+    
     setTheme(newTheme)
     localStorage.setItem('theme', newTheme)
     document.documentElement.setAttribute('data-theme', newTheme)
@@ -24,10 +31,10 @@ export default function ThemeSwitcher() {
   }
 
   return (
-    <label className={`swap swap-rotate ${isAnimating ? 'animate-spin' : ''} transition-all duration-300 hover:scale-110`}>
+    <label className={`swap swap-rotate ${isAnimating ? 'animate-spin' : ''} transition-all duration-300 hover:scale-110 animate-bounce`}>
       <input 
         type="checkbox" 
-        checked={theme === 'dark'}
+        checked={theme !== 'light'}
         onChange={toggleTheme}
       />
       

@@ -17,16 +17,16 @@ export default function Home() {
 
   const faqs = [
     {
-      question: "What is Marketing Autonomous Agents?",
-      answer: "Marketing Autonomous Agents is a platform that enables you to create, deploy, and manage marketing-focused autonomous agents on blockchain networks. Our AI-powered system makes it easy to build complex marketing agents without extensive coding knowledge."
+      question: "What is Myth.OS?",
+      answer: "Myth.OS is a platform that enables you to create, deploy, and manage marketing-focused autonomous agents on blockchain networks. Our AI-powered system makes it easy to build complex marketing agents without extensive coding knowledge."
     },
     {
-      question: "How does Marketing Autonomous Agents work?",
-      answer: "Marketing Autonomous Agents uses advanced AI to translate your marketing requirements into functional autonomous agents. Simply describe what marketing tasks you want your agent to perform, and our system will generate, test, and deploy it for you. You can then monitor and optimize its performance through our dashboard."
+      question: "How does Myth.OS work?",
+      answer: "Myth.OS uses advanced AI to translate your marketing requirements into functional autonomous agents. Simply describe what marketing tasks you want your agent to perform, and our system will generate, test, and deploy it for you. You can then monitor and optimize its performance through our dashboard."
     },
     {
-      question: "What can I build with Marketing Autonomous Agents?",
-      answer: "You can build a wide range of marketing-focused autonomous agents, including social media campaign managers, customer engagement bots, content distribution systems, influencer outreach coordinators, analytics collectors, and much more. If it's related to blockchain marketing, Marketing Autonomous Agents can help you build it."
+      question: "What can I build with Myth.OS?",
+      answer: "You can build a wide range of marketing-focused autonomous agents, including social media campaign managers, customer engagement bots, content distribution systems, influencer outreach coordinators, analytics collectors, and much more. If it's related to blockchain marketing, Myth.OS can help you build it."
     },
     {
       question: 'Are the agents secure?',
@@ -59,13 +59,13 @@ export default function Home() {
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-5xl font-bold mb-4 animate-fade-in">Marketing Autonomous Agents</h1>
+            <h1 className="text-5xl font-bold mb-4 animate-fade-in">Myth.OS</h1>
             <p className="text-xl mb-8 animate-fade-in animate-delay-200">Create, deploy, and manage marketing-focused autonomous agents on blockchain networks with AI</p>
             <p className="pb-6 animate-fade-in animate-delay-300">
         Revolutionize your blockchain marketing with AI-powered autonomous agents. Secure, efficient, and intelligent marketing automation at your fingertips.
       </p>
             <div className="flex justify-center gap-4 animate-fade-in animate-delay-400">
-              <button className="btn btn-primary animate-pulse-soft">Launch dApp</button>
+              <a href="/app" className="btn btn-primary ml-2 animate-bounce-in animate-delay-400 hover:animate-pulse-soft">Launch dApp</a>
               <button className="btn btn-outline hover:animate-pulse-soft">View Documentation</button>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function Home() {
       <div className="bg-base-100 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 animate-fade-in">Marketing on These Blockchain Networks</h2>
-          <p className="text-center mb-8 animate-fade-in animate-delay-100">Deploy your marketing autonomous agents across multiple leading blockchain networks</p>
+          <p className="text-center mb-8 animate-fade-in animate-delay-100">Deploy your autonomous agents across multiple leading blockchain networks</p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
             {blockchains.map((chain, index) => (
@@ -134,7 +134,7 @@ export default function Home() {
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="card-body">
                 <h3 className="card-title animate-fade-in">Cross-Chain Compatible</h3>
-                <p className="animate-fade-in animate-delay-100">Deploy your marketing autonomous agents across multiple blockchain networks with ease.</p>
+                <p className="animate-fade-in animate-delay-100">Deploy your autonomous agents across multiple blockchain networks with ease.</p>
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
@@ -146,7 +146,7 @@ export default function Home() {
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="card-body">
                 <h3 className="card-title animate-fade-in animate-delay-400">Conversational No-Code Builder</h3>
-                <p className="animate-fade-in animate-delay-500">Describe what you want in natural language; Marketing Autonomous Agents handles the implementation for you.</p>
+                <p className="animate-fade-in animate-delay-500">Describe what you want in natural language; Myth.OS handles the implementation for you.</p>
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function Home() {
                     <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="User" />
                   </div>
                 </div>
-                <p className="mb-4 animate-fade-in animate-delay-200">"The Marketing Autonomous Agents platform has revolutionized our blockchain marketing strategy. We've seen a 300% increase in engagement since implementing these AI-powered agents."</p>
+                <p className="mb-4 animate-fade-in animate-delay-200">"The Myth.OS platform has revolutionized our blockchain marketing strategy. We've seen a 300% increase in engagement since implementing these AI-powered agents."</p>
                 <h3 className="font-bold animate-fade-in animate-delay-300">Alex Johnson</h3>
                 <p className="text-sm animate-fade-in animate-delay-400">Marketing Director, CryptoTech Solutions</p>
               </div>
@@ -221,7 +221,7 @@ export default function Home() {
       {/* FAQ Section */}
       <div id="faq" className="container mx-auto py-16 px-4">
         <h2 className="text-3xl font-bold text-center mb-12 animate-fade-in">Frequently Asked Questions</h2>
-        <p className="text-center mb-8 animate-fade-in animate-delay-100">Everything you need to know about our AI-powered marketing autonomous agents platform</p>
+        <p className="text-center mb-8 animate-fade-in animate-delay-100">Everything you need to know about our AI-powered autonomous agents platform</p>
         
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (

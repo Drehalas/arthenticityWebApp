@@ -11,37 +11,38 @@ module.exports = {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
-      "light",
       {
-        dark: {
-          "primary": "#4F46E5",          // Deep indigo as primary color (jewel tone)
-          "primary-focus": "#4338CA",    // Darker shade of primary
-          "primary-content": "#ffffff",  // White text on primary
-          
-          "secondary": "#0EA5E9",        // Bright blue as secondary color
-          "secondary-focus": "#0284C7",  // Darker shade of secondary
-          "secondary-content": "#ffffff", // White text on secondary
-          
-          "accent": "#EC4899",           // Vibrant pink as accent
-          "accent-focus": "#DB2777",     // Darker shade of accent
-          "accent-content": "#ffffff",    // White text on accent
-          
-          "neutral": "#1E293B",          // Dark slate blue for neutral elements
-          "neutral-focus": "#0F172A",    // Darker shade of neutral
-          "neutral-content": "#ffffff",   // White text on neutral
-          
-          "base-100": "#121212",         // Dark gray background (Material Design recommended)
-          "base-200": "#1E1E1E",         // Slightly lighter dark gray
-          "base-300": "#2C2C2C",         // Even lighter dark gray for contrast
-          "base-content": "#E2E8F0",      // Light gray text on base for better readability
-          
-          "info": "#38BDF8",             // Sky blue for info
-          "success": "#22C55E",          // Green for success
-          "warning": "#F59E0B",          // Amber for warning
-          "error": "#EF4444",            // Red for error
-        },
+        light: {
+          "primary": "#570df8",
+          "primary-content": "#ffffff",
+          "secondary": "#f000b8",
+          "secondary-content": "#ffffff",
+          "accent": "#37cdbe",
+          "accent-content": "#ffffff",
+          "neutral": "#3d4451",
+          "neutral-content": "#ffffff",
+          "base-100": "#ffffff",
+          "base-200": "#f2f2f2",
+          "base-300": "#e5e6e6",
+          "base-content": "#1f2937"
+        }
       },
-      "cupcake",
+      {
+        cupcake: {
+          "primary": "#65c3c8",
+          "primary-content": "#ffffff",
+          "secondary": "#ef9fbc",
+          "secondary-content": "#ffffff",
+          "accent": "#eeaf3a",
+          "accent-content": "#ffffff",
+          "neutral": "#291334",
+          "neutral-content": "#ffffff",
+          "base-100": "#faf7f5",
+          "base-200": "#efeae6",
+          "base-300": "#e7e2df",
+          "base-content": "#291334"
+        }
+      },
     ],
   },
 }

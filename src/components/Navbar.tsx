@@ -24,26 +24,26 @@ export default function Navbar() {
           </label>
           {isMenuOpen && (
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 animate-slide-up">
-              <li className="animate-fade-in"><a onClick={() => scrollToSection('features')} className="hover:bg-primary hover:text-primary-content transition-all duration-300">Features</a></li>
-              <li className="animate-fade-in animate-delay-100"><a onClick={() => scrollToSection('how-it-works')} className="hover:bg-primary hover:text-primary-content transition-all duration-300">How It Works</a></li>
-              <li className="animate-fade-in animate-delay-200"><a onClick={() => scrollToSection('testimonials')} className="hover:bg-primary hover:text-primary-content transition-all duration-300">Testimonials</a></li>
-              <li className="animate-fade-in animate-delay-300"><a onClick={() => scrollToSection('faq')} className="hover:bg-primary hover:text-primary-content transition-all duration-300">FAQ</a></li>
+              <li className="animate-fade-in"><Link href="/#features" className="hover:bg-primary hover:text-primary-content transition-all duration-300">Features</Link></li>
+              <li className="animate-fade-in animate-delay-100"><Link href="/#how-it-works" className="hover:bg-primary hover:text-primary-content transition-all duration-300">How It Works</Link></li>
+              <li className="animate-fade-in animate-delay-200"><Link href="/#testimonials" className="hover:bg-primary hover:text-primary-content transition-all duration-300">Testimonials</Link></li>
+              <li className="animate-fade-in animate-delay-300"><Link href="/#faq" className="hover:bg-primary hover:text-primary-content transition-all duration-300">FAQ</Link></li>
             </ul>
           )}
         </div>
-        <Link href="/" className="btn btn-ghost text-xl animate-fade-in">Marketing Autonomous Agents</Link>
+        <Link href="/" className="btn btn-ghost text-xl animate-fade-in">Myth.OS</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li className="animate-fade-in"><a onClick={() => scrollToSection('features')} className="hover:bg-primary hover:text-primary-content transition-all duration-300">Features</a></li>
-          <li className="animate-fade-in animate-delay-100"><a onClick={() => scrollToSection('how-it-works')} className="hover:bg-primary hover:text-primary-content transition-all duration-300">How It Works</a></li>
-          <li className="animate-fade-in animate-delay-200"><a onClick={() => scrollToSection('testimonials')} className="hover:bg-primary hover:text-primary-content transition-all duration-300">Testimonials</a></li>
-          <li className="animate-fade-in animate-delay-300"><a onClick={() => scrollToSection('faq')} className="hover:bg-primary hover:text-primary-content transition-all duration-300">FAQ</a></li>
+          <li className="animate-fade-in"><Link href="/#features" className="hover:bg-primary hover:text-primary-content transition-all duration-300">Features</Link></li>
+          <li className="animate-fade-in animate-delay-100"><Link href="/#how-it-works" className="hover:bg-primary hover:text-primary-content transition-all duration-300">How It Works</Link></li>
+          <li className="animate-fade-in animate-delay-200"><Link href="/#testimonials" className="hover:bg-primary hover:text-primary-content transition-all duration-300">Testimonials</Link></li>
+          <li className="animate-fade-in animate-delay-300"><Link href="/#faq" className="hover:bg-primary hover:text-primary-content transition-all duration-300">FAQ</Link></li>
         </ul>
       </div>
       <div className="navbar-end">
         <ThemeSwitcher />
-        <a className="btn btn-primary ml-2 animate-bounce-in animate-delay-400 hover:animate-pulse-soft">Launch dApp</a>
+        <Link href="/app" className="btn btn-primary ml-2 animate-bounce-in animate-delay-400 hover:animate-pulse-soft">Launch dApp</Link>
       </div>
     </div>
   );

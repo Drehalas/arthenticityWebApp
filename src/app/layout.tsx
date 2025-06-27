@@ -6,7 +6,7 @@ import Navbar from '@/components/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Frontend AO Agents',
+  title: 'Myth.OS',
   description: 'A one-page application with DaisyUI and TailwindCSS',
 }
 
