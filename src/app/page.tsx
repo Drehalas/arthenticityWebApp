@@ -213,15 +213,21 @@ export default function Home() {
           
           {/* Single testimonial centered */}
           <div className="flex justify-center animate-slide-up">
-            <div className="card bg-base-100 shadow-xl max-w-lg hover:shadow-2xl transition-all duration-300">
+            <div className="card bg-base-100 shadow-xl max-w-2xl hover:shadow-2xl transition-all duration-300">
               <div className="card-body items-center text-center">
-                <div className="avatar mb-4 animate-bounce-in">
-                  <div className="w-24 rounded-full">
-                    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="User" />
+                <div className="avatar mb-6 animate-bounce-in">
+                  <div className="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    <img src="/ines.jpeg" alt="Dr. Ines O'Donovan" className="rounded-full" />
                   </div>
                 </div>
-                <p className="mb-4 animate-fade-in animate-delay-200">"Since integrating Myth.OS into our platform at Longevity Magazine, we've seen early signs of improved engagement. With AI-powered agents optimizing ad targeting and placement, we expect to see a 25% boost in interaction rates over the coming months."</p>
-                <h3 className="font-bold animate-fade-in animate-delay-300">Ines</h3>
+                <blockquote className="text-lg mb-6 animate-fade-in animate-delay-200 italic leading-relaxed max-w-xl">
+                  "Since integrating Myth.OS into our platform at Jeunessima Magazine, we've seen early signs of improved engagement. With AI-powered agents optimizing ad targeting and placement, we expect to see a 25% boost in interaction rates over the coming months."
+                </blockquote>
+                <div className="animate-fade-in animate-delay-300">
+                  <h3 className="text-xl font-bold text-primary mb-1">Dr. Ines O'Donovan, PhD</h3>
+                  <p className="text-lg font-semibold text-secondary mb-1">The Ageless Futurist</p>
+                  <p className="text-base font-medium text-accent">CEO, Jeunessima Magazine</p>
+                </div>
               </div>
             </div>
           </div>
