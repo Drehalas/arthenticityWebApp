@@ -58,15 +58,37 @@ export default function Home() {
       {/* Hero Section */}
       <div className="hero min-h-screen gradient-hero">
         <div className="hero-content text-center">
-          <div className="max-w-md">
-            <h1 className="text-5xl font-bold mb-4 animate-fade-in text-white drop-shadow-lg">Myth.OS</h1>
-            <p className="text-xl mb-8 animate-fade-in animate-delay-200 text-white drop-shadow-md">Create, deploy, and manage marketing-focused autonomous agents on blockchain networks with AI</p>
-            <p className="pb-6 animate-fade-in animate-delay-300 text-white drop-shadow-md">
-        Revolutionize your blockchain marketing with AI-powered autonomous agents. Secure, efficient, and intelligent marketing automation at your fingertips.
-      </p>
-            <div className="flex justify-center gap-4 animate-fade-in animate-delay-400">
-              <a href="/app" className="btn btn-primary ml-2 animate-bounce-in animate-delay-400 hover:animate-pulse-soft bg-white text-black border-white hover:bg-gray-100">Launch dApp</a>
-              <button className="btn btn-outline hover:animate-pulse-soft border-white text-white hover:bg-white hover:text-black">View Documentation</button>
+          <div className="max-w-4xl">
+            <h1 className="text-7xl md:text-8xl font-bold mb-6 hero-title animate-fade-in">Myth.OS</h1>
+            <p className="text-2xl md:text-3xl mb-8 hero-subtitle animate-fade-in animate-delay-200 text-white font-light tracking-wide">Create, deploy, and manage marketing-focused autonomous agents on blockchain networks with AI</p>
+            <p className="text-lg md:text-xl pb-8 hero-description text-gray-200 max-w-3xl mx-auto leading-relaxed">
+              Revolutionize your blockchain marketing with AI-powered autonomous agents. Secure, efficient, and intelligent marketing automation at your fingertips.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-6 animate-fade-in animate-delay-400">
+              <a href="/app" className="floating-btn btn btn-primary btn-lg text-lg px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 border-none text-white hover:from-purple-700 hover:to-pink-700 transform transition-all duration-300">
+                <span className="flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                  Launch dApp
+                </span>
+              </a>
+              <button className="floating-btn btn btn-outline btn-lg text-lg px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-gray-900 backdrop-blur-sm bg-white/10 transform transition-all duration-300">
+                <span className="flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  View Documentation
+                </span>
+              </button>
+            </div>
+            
+            {/* Floating elements */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full opacity-60 animate-ping" style={{animationDelay: '0s'}}></div>
+              <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-purple-300 rounded-full opacity-80 animate-ping" style={{animationDelay: '1s'}}></div>
+              <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-pink-300 rounded-full opacity-70 animate-ping" style={{animationDelay: '2s'}}></div>
+              <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-cyan-300 rounded-full opacity-60 animate-ping" style={{animationDelay: '3s'}}></div>
             </div>
           </div>
         </div>
