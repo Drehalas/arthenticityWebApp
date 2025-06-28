@@ -198,9 +198,8 @@ export default function Home() {
                     <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="User" />
                   </div>
                 </div>
-                <p className="mb-4 animate-fade-in animate-delay-200">"The Myth.OS platform has revolutionized our blockchain marketing strategy. We've seen a 300% increase in engagement since implementing these AI-powered agents."</p>
-                <h3 className="font-bold animate-fade-in animate-delay-300">Alex Johnson</h3>
-                <p className="text-sm animate-fade-in animate-delay-400">Marketing Director, CryptoTech Solutions</p>
+                <p className="mb-4 animate-fade-in animate-delay-200">"Since integrating Myth.OS into our platform at Longevity Magazine, we've seen early signs of improved engagement. With AI-powered agents optimizing ad targeting and placement, we expect to see a 25% boost in interaction rates over the coming months."</p>
+                <h3 className="font-bold animate-fade-in animate-delay-300">Ines</h3>
               </div>
             </div>
           </div>
