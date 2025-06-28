@@ -18,7 +18,7 @@ export default function Home() {
   const faqs = [
     {
       question: "What is Myth.OS?",
-      answer: "Myth.OS is a platform that enables you to create, deploy, and manage marketing-focused autonomous agents on blockchain networks. Our AI-powered system makes it easy to build complex marketing agents without extensive coding knowledge."
+      answer: "Myth.OS is a comprehensive platform that enables you to create, deploy, and manage intelligent marketing agents across both Web3 blockchain networks and traditional Web2 platforms. Our AI-powered system seamlessly bridges decentralized and centralized ecosystems, making it easy to build sophisticated cross-platform marketing agents without extensive coding knowledge."
     },
     {
       question: "How does Myth.OS work?",
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="hero-content text-center">
           <div className="max-w-4xl">
             <h1 className="text-7xl md:text-8xl font-bold mb-6 hero-title animate-fade-in">Myth.OS</h1>
-            <p className="text-2xl md:text-3xl mb-8 hero-subtitle animate-fade-in animate-delay-200 text-white font-light tracking-wide">Create, deploy, and manage marketing-focused autonomous agents on blockchain networks with AI</p>
+            <p className="text-2xl md:text-3xl mb-8 hero-subtitle animate-fade-in animate-delay-200 text-white font-light tracking-wide">Design, deploy, and manage intelligent marketing agents powered by advanced AI—across Web3 blockchains and Web2 platforms</p>
             <p className="text-lg md:text-xl pb-8 hero-description text-gray-200 max-w-3xl mx-auto leading-relaxed">
               Revolutionize your blockchain marketing with AI-powered autonomous agents. Secure, efficient, and intelligent marketing automation at your fingertips.
             </p>
