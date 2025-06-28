@@ -56,17 +56,17 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <div className="hero min-h-screen bg-base-200">
+      <div className="hero min-h-screen gradient-hero">
         <div className="hero-content text-center">
           <div className="max-w-md">
-            <h1 className="text-5xl font-bold mb-4 animate-fade-in">Myth.OS</h1>
-            <p className="text-xl mb-8 animate-fade-in animate-delay-200">Create, deploy, and manage marketing-focused autonomous agents on blockchain networks with AI</p>
-            <p className="pb-6 animate-fade-in animate-delay-300">
+            <h1 className="text-5xl font-bold mb-4 animate-fade-in text-white drop-shadow-lg">Myth.OS</h1>
+            <p className="text-xl mb-8 animate-fade-in animate-delay-200 text-white drop-shadow-md">Create, deploy, and manage marketing-focused autonomous agents on blockchain networks with AI</p>
+            <p className="pb-6 animate-fade-in animate-delay-300 text-white drop-shadow-md">
         Revolutionize your blockchain marketing with AI-powered autonomous agents. Secure, efficient, and intelligent marketing automation at your fingertips.
       </p>
             <div className="flex justify-center gap-4 animate-fade-in animate-delay-400">
-              <a href="/app" className="btn btn-primary ml-2 animate-bounce-in animate-delay-400 hover:animate-pulse-soft">Launch dApp</a>
-              <button className="btn btn-outline hover:animate-pulse-soft">View Documentation</button>
+              <a href="/app" className="btn btn-primary ml-2 animate-bounce-in animate-delay-400 hover:animate-pulse-soft bg-white text-black border-white hover:bg-gray-100">Launch dApp</a>
+              <button className="btn btn-outline hover:animate-pulse-soft border-white text-white hover:bg-white hover:text-black">View Documentation</button>
             </div>
           </div>
         </div>

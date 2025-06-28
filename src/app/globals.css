@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Economica');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -104,4 +105,51 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* Gradient Animation Styles */
+.gradient-hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #34495e;
+}
+
+.gradient-hero::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000vh;
+  background: linear-gradient(
+    0deg,
+    rgb(101, 91, 239) 0%,
+    rgb(250, 40, 191) 20%,
+    rgb(255, 70, 101) 40%,
+    rgb(251, 222, 78) 60%,
+    rgb(0, 251, 234) 80%,
+    rgb(85, 93, 239) 100%
+  );
+  animation: gradientMove 17.5s infinite linear;
+  z-index: 0;
+}
+
+.gradient-hero .hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes gradientMove {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-800vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
