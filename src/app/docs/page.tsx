@@ -137,7 +137,6 @@ export default function DocsPage() {
                 <pre data-prefix="3"><code>  platform: 'twitter',</code></pre>
                 <pre data-prefix="4"><code>  strategy: 'engagement',</code></pre>
                 <pre data-prefix="5"><code>  target: 'crypto-enthusiasts'</code></pre>
-                <pre data-prefix="6"><code>});</code></pre>
               </div>
 
               <div className="alert alert-success">
