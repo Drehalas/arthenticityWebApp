@@ -6,7 +6,13 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'abc': ['ABCFavoritMono', 'monospace'],
+        'sans': ['ABCFavoritMono', 'monospace'],
+        'mono': ['ABCFavoritMono', 'monospace'],
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
