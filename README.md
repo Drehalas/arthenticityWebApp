@@ -1,6 +1,10 @@
-# Frontend AO Agents
+# Arthenticity
 
-A one-page Next.js application with DaisyUI and TailwindCSS, designed as a foundation for integrating agents later.
+A blockchain-based art verification platform built with Next.js, designed by artists for artists under the European Artist Bank ecosystem.
+
+## About Arthenticity
+
+Arthenticity is an innovative Art Verification Product on Blockchain, Made By Artists for Artists under European Artist Bank. Our platform provides secure, transparent, and immutable authentication for artworks, ensuring provenance and protecting artists' intellectual property rights through advanced blockchain technology.
 
 ## Features
 
@@ -9,7 +13,10 @@ A one-page Next.js application with DaisyUI and TailwindCSS, designed as a found
 - TypeScript support
 - Responsive design
 - Theme switching capability
-- Tab-based interface for different sections
+- Blockchain art verification system
+- Provenance tracking
+- Digital certificate generation
+- European Artist Bank integration
 
 ## Getting Started
 
@@ -24,7 +31,7 @@ A one-page Next.js application with DaisyUI and TailwindCSS, designed as a found
 
 ```bash
 git clone <repository-url>
-cd frontendAOAgents
+cd arthenticity
 ```
 
 2. Install dependencies

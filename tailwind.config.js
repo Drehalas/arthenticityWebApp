@@ -12,37 +12,21 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        light: {
-          "primary": "#570df8",
-          "primary-content": "#ffffff",
-          "secondary": "#f000b8",
-          "secondary-content": "#ffffff",
-          "accent": "#37cdbe",
-          "accent-content": "#ffffff",
-          "neutral": "#3d4451",
-          "neutral-content": "#ffffff",
-          "base-100": "#ffffff",
-          "base-200": "#f2f2f2",
-          "base-300": "#e5e6e6",
-          "base-content": "#000000"
+        arthenticity: {
+          "primary": "#dc2626",           // Red
+          "primary-content": "#ffffff",   // White
+          "secondary": "#000000",         // Black
+          "secondary-content": "#ffffff", // White
+          "accent": "#ef4444",            // Light Red
+          "accent-content": "#ffffff",    // White
+          "neutral": "#1f2937",           // Dark Gray
+          "neutral-content": "#ffffff",   // White
+          "base-100": "#ffffff",          // White
+          "base-200": "#f5f5f5",          // Light Gray
+          "base-300": "#e5e5e5",          // Gray
+          "base-content": "#000000"       // Black
         }
-      },
-      {
-        cupcake: {
-          "primary": "#65c3c8",
-          "primary-content": "#ffffff",
-          "secondary": "#ef9fbc",
-          "secondary-content": "#ffffff",
-          "accent": "#eeaf3a",
-          "accent-content": "#ffffff",
-          "neutral": "#291334",
-          "neutral-content": "#ffffff",
-          "base-100": "#faf7f5",
-          "base-200": "#efeae6",
-          "base-300": "#e7e2df",
-          "base-content": "#000000"
-        }
-      },
+      }
     ],
   },
 }

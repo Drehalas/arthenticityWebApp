@@ -6,8 +6,8 @@ import Navbar from '@/components/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Myth.OS',
-  description: 'A one-page application with DaisyUI and TailwindCSS',
+  title: 'Arthenticity - Blockchain Art Verification',
+  description: 'Art Verification Product on Blockchain, Made By Artists for Artists under European Artist Bank',
 }
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="en" data-theme="arthenticity">
       <body className={inter.className}>
         <Navbar />
         {children}

@@ -17,55 +17,51 @@ export default function Home() {
 
   const faqs = [
     {
-      question: "What is Myth.OS?",
-      answer: "Myth.OS is a comprehensive platform that enables you to create, deploy, and manage intelligent marketing agents across both Web3 blockchain networks and traditional Web2 platforms. Our AI-powered system seamlessly bridges decentralized and centralized ecosystems, making it easy to build sophisticated cross-platform marketing agents without extensive coding knowledge."
+      question: "What is Arthenticity?",
+      answer: "Arthenticity is a revolutionary blockchain-based art verification platform, made by artists for artists under the European Artist Bank. Our platform provides secure, transparent, and immutable authentication for artworks, ensuring provenance and protecting artists' intellectual property rights through advanced blockchain technology."
     },
     {
-      question: "How does Myth.OS work?",
-      answer: "Myth.OS uses advanced AI to translate your marketing requirements into functional autonomous agents. Simply describe what marketing tasks you want your agent to perform, and our system will generate, test, and deploy it for you. You can then monitor and optimize its performance through our dashboard."
+      question: "How does Arthenticity work?",
+      answer: "Arthenticity uses blockchain technology to create permanent, tamper-proof records of artwork authenticity. Artists can register their works, establish provenance, and create digital certificates that follow their art throughout its lifetime. Our platform integrates with European Artist Bank standards to ensure compliance and recognition across the art community."
     },
     {
-      question: "What can I build with Myth.OS?",
-      answer: "You can build a wide range of marketing-focused autonomous agents, including social media campaign managers, customer engagement bots, content distribution systems, influencer outreach coordinators, analytics collectors, and much more. If it's related to blockchain marketing, Myth.OS can help you build it."
+      question: "What can I verify with Arthenticity?",
+      answer: "You can verify paintings, sculptures, digital art, photography, mixed media, and any form of artistic creation. Our platform supports comprehensive documentation including creation process, materials used, artist biography, and ownership history, all secured on the blockchain."
     },
     {
-      question: 'Are the agents secure?',
-      answer: 'Yes, our agents undergo rigorous security testing and auditing. We implement industry-standard security practices and continuously monitor for potential vulnerabilities.'
+      question: 'Is the verification process secure?',
+      answer: 'Yes, our blockchain-based verification system provides the highest level of security. Each artwork receives a unique digital fingerprint that cannot be forged or duplicated, ensuring permanent and immutable proof of authenticity.'
     },
     {
-      question: 'Can I customize my agents?',
-      answer: 'Absolutely! You can customize your agents\'s behavior, tasks, and triggers using our intuitive interface or through code if you prefer more granular control.'
+      question: 'Can I track my artwork\'s history?',
+      answer: 'Absolutely! Every verified artwork maintains a complete provenance chain on the blockchain, tracking ownership transfers, exhibitions, sales, and any significant events in the artwork\'s history.'
     },
     {
-      question: 'What kind of support do you offer?',
-      answer: 'We offer comprehensive support including documentation, tutorials, community forums, and direct technical assistance for enterprise customers.'
+      question: 'What support does European Artist Bank provide?',
+      answer: 'As part of the European Artist Bank ecosystem, we offer comprehensive support including artist education programs, legal guidance for intellectual property protection, and integration with European art market standards.'
     }
   ]
 
   const blockchains = [
+    'Solana',
+    'Polkadot',
     'Ethereum',
-    'Arbitrum',
-    'Optimism',
-    'Base',
-    'Polygon',
-    'Avalanche',
-    'BNB Chain',
-    'NEAR'
+    'Polygon'
   ]
 
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
       <div className="hero min-h-screen gradient-hero">
-        <div className="hero-content text-center">
+        <div className="hero-content text-center text-white relative z-10">
           <div className="max-w-4xl">
-            <h1 className="text-7xl md:text-8xl font-bold mb-6 hero-title animate-fade-in">Myth.OS</h1>
-            <p className="text-2xl md:text-3xl mb-8 hero-subtitle animate-fade-in animate-delay-200 text-white font-light tracking-wide">Design, deploy, and manage intelligent marketing agents powered by advanced AI—across Web3 blockchains and Web2 platforms</p>
+            <h1 className="text-7xl md:text-8xl font-bold mb-6 hero-title animate-fade-in">Arthenticity</h1>
+            <p className="text-2xl md:text-3xl mb-8 hero-subtitle animate-fade-in animate-delay-200 text-white font-light tracking-wide">Blockchain Art Verification Platform—Made By Artists for Artists</p>
             <p className="text-lg md:text-xl pb-8 hero-description text-gray-200 max-w-3xl mx-auto leading-relaxed">
-              Revolutionize your blockchain marketing with AI-powered autonomous agents. Secure, efficient, and intelligent marketing automation at your fingertips.
+              Secure your artistic legacy with immutable blockchain verification. Protect, authenticate, and track your artwork's provenance under the European Artist Bank ecosystem.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6 animate-fade-in animate-delay-400">
-              <a href="https://6e0907dab094d1512a9b569584b75b0ac17fa88f-5678.dstack-prod5.phala.network/form/e59e78eb-05e0-4c94-b53b-15c9e83045f5" className="floating-btn btn btn-primary btn-lg text-lg px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 border-none text-white hover:from-purple-700 hover:to-pink-700 transform transition-all duration-300">
+              <a href="/app" className="floating-btn btn btn-primary btn-lg text-lg px-8 py-4 border-2 border-primary text-primary-content hover:bg-primary-focus transform transition-all duration-300">
                 <span className="flex items-center gap-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -97,8 +93,8 @@ export default function Home() {
       {/* Supported Blockchains */}
       <div className="bg-base-100 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 animate-fade-in">Marketing on These Blockchain Networks</h2>
-          <p className="text-center mb-8 animate-fade-in animate-delay-100">Deploy your autonomous agents across multiple leading blockchain networks</p>
+          <h2 className="text-3xl font-bold text-center mb-12 animate-fade-in">Art Verification on Leading Blockchain Networks</h2>
+          <p className="text-center mb-8 animate-fade-in animate-delay-100">Secure your artwork's authenticity across multiple trusted blockchain platforms with Hyperbridge Network</p>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
             {blockchains.map((chain, index) => (
@@ -115,8 +111,8 @@ export default function Home() {
 
       {/* Features Section */}
       <div id="features" className="container mx-auto py-16 px-4">
-        <h2 className="text-3xl font-bold text-center mb-4 animate-fade-in">Powered by Advanced Technology</h2>
-        <p className="text-center mb-12 animate-fade-in animate-delay-100">Our platform combines cutting-edge AI with blockchain technology to deliver a seamless agent creation experience.</p>
+        <h2 className="text-3xl font-bold text-center mb-4 animate-fade-in">Advanced Art Authentication Technology</h2>
+        <p className="text-center mb-12 animate-fade-in animate-delay-100">Our platform combines blockchain security with artist-focused tools to deliver comprehensive art verification and provenance tracking.</p>
         
         <div className="tabs tabs-boxed flex justify-center mb-12 animate-fade-in animate-delay-200">
           <a 
@@ -137,38 +133,38 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 animate-slide-up">
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="card-body">
-                <h3 className="card-title animate-fade-in">AI-Powered Marketing Generation</h3>
-                <p className="animate-fade-in animate-delay-100">Leverage advanced AI models to automatically create and manage marketing-focused autonomous agents.</p>
+                <h3 className="card-title animate-fade-in">Blockchain Art Authentication</h3>
+                <p className="animate-fade-in animate-delay-100">Create immutable digital certificates for your artworks with tamper-proof blockchain technology.</p>
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="card-body">
-                <h3 className="card-title animate-fade-in animate-delay-200">Secure by Design</h3>
-                <p className="animate-fade-in animate-delay-300">Built-in security checks and best practices ensure your marketing agents are protected against vulnerabilities.</p>
+                <h3 className="card-title animate-fade-in animate-delay-200">Provenance Tracking</h3>
+                <p className="animate-fade-in animate-delay-300">Maintain complete ownership history and exhibition records for your artworks throughout their lifetime.</p>
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="card-body">
-                <h3 className="card-title animate-fade-in animate-delay-400">Custom Marketing Logic</h3>
-                <p className="animate-fade-in animate-delay-500">Easily implement complex marketing strategies with our intuitive agent creation interface.</p>
+                <h3 className="card-title animate-fade-in animate-delay-400">Artist Rights Protection</h3>
+                <p className="animate-fade-in animate-delay-500">Protect your intellectual property with legally recognized digital certificates and ownership proofs.</p>
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="card-body">
-                <h3 className="card-title animate-fade-in">Cross-Chain Compatible</h3>
-                <p className="animate-fade-in animate-delay-100">Deploy your autonomous agents across multiple blockchain networks with ease.</p>
+                <h3 className="card-title animate-fade-in">European Artist Bank Integration</h3>
+                <p className="animate-fade-in animate-delay-100">Seamlessly integrate with European Artist Bank standards and recognition systems.</p>
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="card-body">
-                <h3 className="card-title animate-fade-in animate-delay-200">Automated Campaign Monitoring</h3>
-                <p className="animate-fade-in animate-delay-300">Continuous performance analysis and optimization suggestions for your marketing campaigns.</p>
+                <h3 className="card-title animate-fade-in animate-delay-200">Digital Art Certificates</h3>
+                <p className="animate-fade-in animate-delay-300">Generate professional digital certificates that can be verified by galleries, collectors, and institutions.</p>
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
               <div className="card-body">
-                <h3 className="card-title animate-fade-in animate-delay-400">Conversational No-Code Builder</h3>
-                <p className="animate-fade-in animate-delay-500">Describe what you want in natural language; Myth.OS handles the implementation for you.</p>
+                <h3 className="card-title animate-fade-in animate-delay-400">Artist-Friendly Interface</h3>
+                <p className="animate-fade-in animate-delay-500">Designed by artists for artists—intuitive tools that understand the creative process and artistic needs.</p>
               </div>
             </div>
           </div>
@@ -181,8 +177,8 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-4 animate-bounce-in">
                   <span className="text-primary-content font-bold">01</span>
                 </div>
-                <h3 className="card-title animate-fade-in">Define Marketing Requirements</h3>
-                <p className="animate-fade-in animate-delay-100">Specify your marketing agent requirements using natural language or our intuitive interface.</p>
+                <h3 className="card-title animate-fade-in">Register Your Artwork</h3>
+                <p className="animate-fade-in animate-delay-100">Upload your artwork details, images, and documentation to create a comprehensive digital record.</p>
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
@@ -190,8 +186,8 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-4 animate-bounce-in animate-delay-200">
                   <span className="text-primary-content font-bold">02</span>
                 </div>
-                <h3 className="card-title animate-fade-in animate-delay-200">AI Marketing Generation</h3>
-                <p className="animate-fade-in animate-delay-300">Our AI system generates optimal marketing agent code and configuration based on your specifications.</p>
+                <h3 className="card-title animate-fade-in animate-delay-200">Blockchain Verification</h3>
+                <p className="animate-fade-in animate-delay-300">Our system creates a unique digital fingerprint and stores it permanently on the blockchain.</p>
               </div>
             </div>
             <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
@@ -199,8 +195,8 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center mb-4 animate-bounce-in animate-delay-400">
                   <span className="text-primary-content font-bold">03</span>
                 </div>
-                <h3 className="card-title animate-fade-in animate-delay-400">Deploy & Monitor</h3>
-                <p className="animate-fade-in animate-delay-500">Deploy your marketing agents with one click and monitor their campaign performance in real-time.</p>
+                <h3 className="card-title animate-fade-in animate-delay-400">Receive Certificate</h3>
+                <p className="animate-fade-in animate-delay-500">Get your official digital certificate of authenticity, recognized by the European Artist Bank.</p>
               </div>
             </div>
           </div>
@@ -221,7 +217,7 @@ export default function Home() {
                   </div>
                 </div>
                 <blockquote className="text-lg mb-6 animate-fade-in animate-delay-200 italic leading-relaxed max-w-xl">
-                  "Since integrating Myth.OS into our platform at Jeunessima Magazine, we've seen early signs of improved engagement. With AI-powered agents optimizing ad targeting and placement, we expect to see a 25% boost in interaction rates over the coming months."
+                  "Since integrating Arthenticity into our gallery's authentication process, we've gained unprecedented confidence in artwork provenance. The blockchain verification gives both artists and collectors the security they need in today's art market."
                 </blockquote>
                 <div className="animate-fade-in animate-delay-300">
                   <h3 className="text-xl font-bold text-primary mb-1">Dr. Ines O'Donovan, PhD</h3>
@@ -239,16 +235,16 @@ export default function Home() {
       {/* Call to Action */}
       <div className="bg-primary text-primary-content py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 animate-fade-in">Ready to Transform Your Blockchain Marketing?</h2>
-          <p className="mb-8 max-w-2xl mx-auto animate-fade-in animate-delay-100">Join the growing community of blockchain projects leveraging AI-powered autonomous agents for their marketing needs.</p>
-          <button className="btn btn-secondary btn-lg animate-bounce-in animate-delay-200 hover:animate-pulse-soft">Get Started Today</button>
+          <h2 className="text-3xl font-bold mb-4 animate-fade-in">Ready to Authenticate Your Artwork?</h2>
+          <p className="mb-8 max-w-2xl mx-auto animate-fade-in animate-delay-100">Join the growing community of artists protecting their creative works with blockchain-verified authenticity certificates.</p>
+          <button className="btn btn-secondary btn-lg animate-bounce-in animate-delay-200 hover:animate-pulse-soft">Start Verification Today</button>
         </div>
       </div>
 
       {/* FAQ Section */}
       <div id="faq" className="container mx-auto py-16 px-4">
         <h2 className="text-3xl font-bold text-center mb-12 animate-fade-in">Frequently Asked Questions</h2>
-        <p className="text-center mb-8 animate-fade-in animate-delay-100">Everything you need to know about our AI-powered autonomous agents platform</p>
+        <p className="text-center mb-8 animate-fade-in animate-delay-100">Everything you need to know about blockchain art verification and authentication</p>
         
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
@@ -278,23 +274,22 @@ export default function Home() {
       <footer className="footer p-10 bg-neutral text-neutral-content">
         <div className="animate-fade-in">
           <span className="footer-title">Services</span> 
-          <a className="link link-hover transition-all duration-300">Branding</a>
-          <a className="link link-hover transition-all duration-300">Design</a>
-          <a className="link link-hover transition-all duration-300">Marketing</a>
-          <a className="link link-hover transition-all duration-300">Advertisement</a>
+          <a className="link link-hover transition-all duration-300">Art Verification</a>
+          <a className="link link-hover transition-all duration-300">Provenance Tracking</a>
+          <a className="link link-hover transition-all duration-300">Digital Certificates</a>
         </div> 
         <div className="animate-fade-in animate-delay-100">
-          <span className="footer-title">Company</span> 
+          <span className="footer-title">European Artist Bank</span> 
           <a className="link link-hover transition-all duration-300">About us</a>
           <a className="link link-hover transition-all duration-300">Contact</a>
-          <a className="link link-hover transition-all duration-300">Jobs</a>
-          <a className="link link-hover transition-all duration-300">Press kit</a>
+          <a className="link link-hover transition-all duration-300">Artist Support</a>
+          <a className="link link-hover transition-all duration-300">Resources</a>
         </div> 
         <div className="animate-fade-in animate-delay-200">
           <span className="footer-title">Legal</span> 
           <a className="link link-hover transition-all duration-300">Terms of use</a>
           <a className="link link-hover transition-all duration-300">Privacy policy</a>
-          <a className="link link-hover transition-all duration-300">Cookie policy</a>
+          <a className="link link-hover transition-all duration-300">Artist Rights</a>
         </div>
       </footer>
     </main>
