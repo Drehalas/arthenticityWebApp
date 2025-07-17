@@ -43,10 +43,10 @@ export default function Home() {
   ]
 
   const blockchains = [
-    'Solana',
-    'Polkadot',
-    'Ethereum',
-    'Polygon'
+    { name: 'Solana', logo: '/solana-sol-logo.png' },
+    { name: 'Polkadot', logo: '/polkadot-new-dot-logo.png' },
+    { name: 'Ethereum', logo: '/ethereum-eth-logo.png' },
+    { name: 'Polygon', logo: '/polygon-matic-logo.png' }
   ]
 
   return (
@@ -55,7 +55,7 @@ export default function Home() {
       <div className="hero min-h-screen gradient-hero">
         <div className="hero-content text-center text-white relative z-10">
           <div className="max-w-4xl">
-            <h1 className="text-7xl md:text-8xl font-bold mb-6 hero-title animate-fade-in">Arthenticity</h1>
+            <h1 className="text-9xl md:text-8xl font-bold mb-6 hero-title animate-fade-in">Arthenticity</h1>
             <p className="text-2xl md:text-3xl mb-8 hero-subtitle animate-fade-in animate-delay-200 text-white font-light tracking-wide">Blockchain Art Verification Platform—Made By Artists for Artists</p>
             <p className="text-lg md:text-xl pb-8 hero-description text-gray-200 max-w-3xl mx-auto leading-relaxed">
               Secure your artistic legacy with immutable blockchain verification. Protect, authenticate, and track your artwork's provenance under the European Artist Bank ecosystem.
@@ -99,10 +99,18 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
             {blockchains.map((chain, index) => (
               <div key={index} className={`flex flex-col items-center animate-bounce-in animate-delay-${(index % 5) * 100}`}>
-                <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-3 hover:animate-pulse-soft">
-                  <span className="text-primary-content text-xl font-bold">{chain.charAt(0)}</span>
+                <div className="w-16 h-16 rounded-full bg-white p-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110">
+                  <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
+                    <Image
+                      src={chain.logo}
+                      alt={`${chain.name} logo`}
+                      width={48}
+                      height={48}
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
-                <span className="font-medium">{chain}</span>
+                <span className="font-medium mt-3">{chain.name}</span>
               </div>
             ))}
           </div>
@@ -111,7 +119,7 @@ export default function Home() {
 
       {/* Features Section */}
       <div id="features" className="container mx-auto py-16 px-4">
-        <h2 className="text-3xl font-bold text-center mb-4 animate-fade-in">Advanced Art Authentication Technology</h2>
+        <h2 className="text-5xl font-bold text-center mb-4 animate-fade-in">Advanced Art Authentication Technology</h2>
         <p className="text-center mb-12 animate-fade-in animate-delay-100">Our platform combines blockchain security with artist-focused tools to deliver comprehensive art verification and provenance tracking.</p>
         
         <div className="tabs tabs-boxed flex justify-center mb-12 animate-fade-in animate-delay-200">
@@ -205,7 +213,7 @@ export default function Home() {
       {/* Testimonials - Now placed outside of tab structure */}
       <div id="testimonials" className="bg-base-200 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 animate-fade-in">What Our Users Say</h2>
+          <h2 className="text-5xl font-bold text-center mb-12 animate-fade-in">What Our Users Say</h2>
           
           {/* Single testimonial centered */}
           <div className="flex justify-center animate-slide-up">
@@ -235,7 +243,7 @@ export default function Home() {
       {/* Call to Action */}
       <div className="bg-primary text-primary-content py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 animate-fade-in">Ready to Authenticate Your Artwork?</h2>
+          <h2 className="text-5xl font-bold mb-4 animate-fade-in">Ready to Authenticate Your Artwork?</h2>
           <p className="mb-8 max-w-2xl mx-auto animate-fade-in animate-delay-100">Join the growing community of artists protecting their creative works with blockchain-verified authenticity certificates.</p>
           <button className="btn btn-secondary btn-lg animate-bounce-in animate-delay-200 hover:animate-pulse-soft">Start Verification Today</button>
         </div>
@@ -243,7 +251,7 @@ export default function Home() {
 
       {/* FAQ Section */}
       <div id="faq" className="container mx-auto py-16 px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 animate-fade-in">Frequently Asked Questions</h2>
+        <h2 className="text-5xl font-bold text-center mb-12 animate-fade-in">Frequently Asked Questions</h2>
         <p className="text-center mb-8 animate-fade-in animate-delay-100">Everything you need to know about blockchain art verification and authentication</p>
         
         <div className="max-w-3xl mx-auto">
